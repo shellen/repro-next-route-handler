@@ -21,15 +21,17 @@ Build fails with error:
 `Type error: Route "src/app/api/test/[id]/route.ts" has an invalid "PATCH" export:`
 `  Type "{ params: { id: string; }; }" is not a valid type for the function's second argument.`
 
-# To reproc, I've this new Next.js project
+# To repro, I've this new Next.js project
+
 `npx create-next-app@latest repro-next-route-handler`
+
 # Select options:
-# - TypeScript: Yes
-# - ESLint: Yes
-# - Tailwind: No
-# - src/ directory: Yes
-# - App Router: Yes
-# - Custom import alias: No
+- TypeScript: Yes
+- ESLint: Yes
+- Tailwind: No
+- src/ directory: Yes
+- App Router: Yes
+- Custom import alias: No
 
 `cd repro-next-route-handler`
 
